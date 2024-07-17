@@ -163,7 +163,6 @@
     <form autocomplete="off">
         @csrf
         <div class="col-md-6">
-          <h6>THỐNG KÊ DOANH THU</h6>
             <p>Từ ngày: <input type="text" id="datepicker" class="form-control"></p>
         </div>
         <div class="col-md-6">
@@ -343,7 +342,7 @@
     $(document).ready(function() {
         // Gửi yêu cầu AJAX khi trang được tải
         $.ajax({
-            url: '{{ route("filter.best.selling.products") }}',
+            url: "{{ URL::to('/laravel/php/filter.best.selling.products') }}",
             method: 'POST',
             headers: {
                 'X-CSRF-TOKEN': csrfToken // Thêm token CSRF vào header của yêu cầu
