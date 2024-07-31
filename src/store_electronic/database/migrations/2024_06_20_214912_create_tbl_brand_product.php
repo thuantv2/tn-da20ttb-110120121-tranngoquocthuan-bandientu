@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('brand_name');
             $table->text('brand_desc');
             $table->integer('brand_status');
-            $table->timestamps();
+            $table->timestamps(); 
         });
     }
 

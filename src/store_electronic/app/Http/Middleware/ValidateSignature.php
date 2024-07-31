@@ -15,7 +15,7 @@ class ValidateSignature extends Middleware
         // 'fbclid',
         // 'utm_campaign',
         // 'utm_content',
-        // 'utm_medium',
+        // 'utm_medium', 
         // 'utm_source',
         // 'utm_term',
     ];
